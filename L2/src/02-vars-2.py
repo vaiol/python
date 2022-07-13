@@ -2,13 +2,10 @@ x = str(3)
 y = int(3)    
 z = float(3) 
 
-p = x
+p = y
 
 
-print('x type', type(x), x)
-print('y type', type(y), y)
-print('z type', type(z), z)
-
+y = 3
 
 print('x location', id(x), x)
 print('y location', id(y), y)

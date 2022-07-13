@@ -1,4 +1,7 @@
-a = 33
-b = 200
-if b > a:
-  print("b is greater than a")
+apples_with_me = 200
+apple_in_store = 200
+
+if apples_with_me >= apple_in_store:
+  print("Я маю більше (або стільки ж) яблук як в магазині!")
+else:
+  print("Магазин має більше яблук!")

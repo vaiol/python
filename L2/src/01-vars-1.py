@@ -1,8 +1,8 @@
 a = 5
-b = "John"
+b = '1'
 
-c = True
+c = a + float(b) + 1 + 10 - 10 // 3 * 1 # 5 + 1 = 6
+c1 = 10 / 3
 
-print(a)
-print(b)
-print(c)
+print(type(c), c)
+print(int(c))

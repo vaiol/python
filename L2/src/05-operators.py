@@ -16,6 +16,12 @@
 # **	Exponentiation	x ** y	
 # //	Floor division	x // y
 
+# 10 / 3 = 9 
+# 10 - 9
+print(10 / 3)
+print(10 // 3)
+print(11 % 2)
+
 # Python Assignment Operators
 # =	x = 5	x = 5	
 # +=	x += 3	x = x + 3	
@@ -31,6 +37,16 @@
 # >>=	x >>= 3	x = x >> 3	
 # <<=	x <<= 3	x = x << 3
 
+c = 10
+c = c + 10
+
+c1 = 10
+c1 += 10
+
+c2 = +10
+print('c2', c2)
+c2 = -10
+print('c2', c2)
 
 # Python Logical Operators
 
@@ -43,5 +59,5 @@
 # is not	Returns True if both variables are not the same object	x is not y
 
 # Python Membership Operators
-# n 	Returns True if a sequence with the specified value is present in the object	x in y	
+# in 	Returns True if a sequence with the specified value is present in the object	x in y	
 # not in	Returns True if a sequence with the specified value is not present in the object	x not in y
