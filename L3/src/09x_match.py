@@ -9,6 +9,6 @@ match msg:
         print("The message didn’t match with anything")
 
 
-if ...:
-else if ...:
-else:
+# if ...:
+# else if ...:
+# else:
