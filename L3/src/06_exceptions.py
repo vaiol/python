@@ -1,13 +1,23 @@
 
-val = '12q'
+val = '12a'
 
 try:
     num = int(val)
-    if num == 13:
-        raise Exception('really bad value')
     print(num)
-except Exception as err:
-    print('Some err', err)
+except: # всі
+    print('Some err')
+
+try:
+    num = int(val)
+    print(num)
+except Exception as err:  # всі
+    print('Some err')
+
+try:
+    num = int(val)
+    print(num)
+except ValueError as err:  # тільки ValueError
+    print('Some err')
 
 # NameError
 # ZeroDivisionError

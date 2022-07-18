@@ -2,17 +2,19 @@ my_list = ["apple", "banana", "cherry"]
 
 ## while loop
 
-i = 0
-while i < len(my_list):
-  print(my_list[i])
-  i = i + 1
+# i = 0
+# while i < len(my_list):
+#   print(my_list[i])
+#   i = i + 1
 
 
 
 ## for loop
 
-# for x in my_list:
-#   print(x)
+for item in my_list:
+    if item == 'banana':
+        break
+    print(item)
 
 
 

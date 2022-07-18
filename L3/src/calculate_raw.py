@@ -33,12 +33,26 @@ if operation == '/' and right_operand == 0:
     print('Division by zero is not allowed')
     sys.exit()
 
+## Option 1
+# if operation == '*':
+#     print(left_operand * right_operand)
+# elif operation == '+':
+#     print(left_operand + right_operand)
 
-print(eval(f'{left_operand}{operation}{right_operand}'))
+## Option 2
+# match operation:
+#     case '*':
+#         print(left_operand * right_operand)
+#     case '+':
+#         print(left_operand + right_operand)
 
 
-'100/1'.split('/') # operation = /, left, right = ['100', '1']
-'100+1'.split('+') # ['100', '1'] 
+## Option 3
+# print(eval(f'{left_operand}{operation}{right_operand}'))
+
+
+# def perform_operation(left, right, operation)
+#     return ()
 
 
     

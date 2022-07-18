@@ -1,4 +1,4 @@
-msg = ['hello', 'Alex']
+msg = ['hello']
 
 match msg:
     case ["hello"]:
@@ -7,3 +7,8 @@ match msg:
         print(f"This message is a personal greeting to {name}")
     case _:
         print("The message didn’t match with anything")
+
+
+if ...:
+else if ...:
+else:
