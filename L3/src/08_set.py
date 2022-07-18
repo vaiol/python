@@ -1,0 +1,1 @@
+myset = {"apple", "banana", "cherry"}
