@@ -111,6 +111,8 @@
 ```
 Порядок спіралі виглядає ось так:  
 ![m1](https://raw.githubusercontent.com/vaiol/python/main/L3/src/m1.png)  
+   
+     
 ![m2](https://raw.githubusercontent.com/vaiol/python/main/L3/src/m2.png)
 
 Тестувати функцію ви можете як завгодно: за допомогою модуля sys і аргументів програми, або за допомогою input() або в результаті викликів функції. Але в файлі `spiral.py` повина бути створена функція `def spiral(matrix)` яка виконує необхідну логіку.
