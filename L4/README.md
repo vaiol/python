@@ -30,4 +30,7 @@
 - https://dementiy.github.io/lectures/immutable-types/
 - https://dementiy.github.io/lectures/mutable-types/
 
+### Hash
+- https://pythobyte.com/python-hash-function-09311/
+
 
