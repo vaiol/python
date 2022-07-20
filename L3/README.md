@@ -3,7 +3,7 @@
 
 
 ## Матеріали
-1. Запис лекції [https://youtu.be/HzBv9RuzAjE](https://youtu.be/HzBv9RuzAjE) (Ще в обробці)
+1. Запис лекції [https://youtu.be/HzBv9RuzAjE](https://youtu.be/HzBv9RuzAjE)  
 
 ## Додаткові матеріали
 - https://pythonguide.rozh2sch.org.ua/#_%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B8_%D1%96_%D0%BA%D0%BE%D1%80%D1%82%D0%B5%D0%B6%D1%96 
