@@ -3,7 +3,7 @@
 
 
 ## Матеріали
-1. Запис лекції TODO
+1. Запис лекції [https://youtu.be/jUGG8ZZ0MlU](https://youtu.be/jUGG8ZZ0MlU)
 
 
 ## Додаткові матеріали
@@ -32,5 +32,15 @@
 
 ### Hash
 - https://pythobyte.com/python-hash-function-09311/
+
+
+## ДЗ
+
+### Завдання 1
+
+Виконати завдання twoSum. Розбір був на лекції. 
+- Завдання описано в файлі https://github.com/vaiol/python/blob/main/L4/src/05_two_sum.py
+- Розбір на лекції https://youtu.be/jUGG8ZZ0MlU?t=8008
+
 
 
