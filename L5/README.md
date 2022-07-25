@@ -30,7 +30,7 @@
 - `popularity('apple kiwi pineapple kiwi apple kiwi')` -> ['kiwi', 'apple', 'pineapple']
 - `popularity('aPPle pine Apple kiwi Apple kiwi')` -> ['apple', 'kiwi', 'pine']
 - `popularity('aPPle pine Apple kiwi Apple kiwi')` -> ['apple', 'kiwi', 'pine']
-- `popularity('aab aaa aac aab aac aaa x')` -> ['aaa', 'aac', 'aac', 'x']
+- `popularity('aab aaa aac aab aac aaa x')` -> ['aaa', 'aab', 'aac', 'x']
 
 
 
