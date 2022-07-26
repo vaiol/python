@@ -1,6 +1,9 @@
 # Лекція 3
 25.07.2022
 
+## Матеріали
+1. Запис лекції [https://youtu.be/w9SGUvRfNws](https://youtu.be/w9SGUvRfNws)
+
 
 ## ДЗ
 
