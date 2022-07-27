@@ -7,3 +7,4 @@ class Course:
     def __str__(self):
         return f'{self.name} course. Start: {self.start_date}. Finish: {self.end_date}'
 
+

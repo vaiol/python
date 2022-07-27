@@ -7,21 +7,16 @@ class Student:
         self.course = 'Python'
 
     def greeting(self):
-        print("Hello my name is " + self.name)
-
-    def increaseMark(self, num):
-        if num <= 0:
-            return
-        self.mark += num
-        if self.mark > 100:
-            self.mark = 100
+        print("My str repr: " + self.__str__())
     
-    def description(self):
+    def __str__(self):
         return f'Student. Name is {self.name}. Age is {self.age}. Study at the {self.course} and has {self.mark} mark.'
 
-student = Student('Alex', 27)
-student.greeting()
-print(student.description())
-# create __str__
-# see if it's chanhging
+alex_student = Student('Alex', 27)
+oleg_student = Student('Oleg', 21)
+
+print(alex_student)
+oleg_student.greeting()
+
+
 

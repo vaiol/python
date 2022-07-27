@@ -9,6 +9,9 @@ class Student:
     def greeting(self):
         print("Hello my name is " + self.name)
 
+    def say_mark(self):
+        print('My score is ' + str(self.mark))
+
     def increase_mark(self, num):
         if num <= 0:
             return
@@ -16,6 +19,9 @@ class Student:
         if self.mark > 100:
             self.mark = 100
 
-student = Student('Alex', 27)
+alex_student = Student('Alex', 27)
+alex_student.say_mark()
+alex_student.increase_mark(110)
+alex_student.say_mark()
 
 # private members

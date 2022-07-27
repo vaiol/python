@@ -8,9 +8,12 @@ class Student:
     def greeting(self):
         print("Hello my name is " + self.name)
 
+
+
+
 student = Student({ 'name': 'Alex', 'age': 27 })
-print(student)
-print(student.name)
+num = 121
 print(type(student))
 
+# student.name
 student.greeting()

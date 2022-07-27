@@ -1,11 +1,16 @@
 # name as CapWords
 
-class SomeStudent:
+class Student:
   name = 'Alex'
   age = 27
   mark = 'A'
 
 
-someStudent = SomeStudent()
+someStudent = Student()
+
+
+someStudent.name = 'Oleg'
 print(someStudent.name)
-print(SomeStudent.name)
+anotherStudent = Student()
+print(anotherStudent.name)
+print(Student.name)

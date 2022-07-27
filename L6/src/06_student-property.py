@@ -10,6 +10,7 @@ class Student:
         print("Hello my name is " + self.name)
 
     def set_mark(self, new_mark):
+        print('set mark', new_mark)
         if new_mark <= 0:
             self._mark = 0
             return
@@ -19,20 +20,25 @@ class Student:
         self._mark = new_mark
     
     def get_mark(self):
+        print('get mark')
         return self._mark
 
     def del_mark(self):
+        print('del op')
         del self._mark
 
-    mark = property(get_mark, set_mark, del_mark) 
+    mark = property(get_mark, set_mark, del_mark)
 
-student = Student('Alex', 27)
-print(student.mark)
-student.mark += 10
-print(student.mark)
-student.mark += 110
-print(student.mark)
-student.mark -= 3000
-print(student.mark)
+    def say_mark(self):
+        print('My score is ' + str(self.mark))
+
+alex_student = Student('Alex', 27)
+print('before')
+alex_student.mark = 110
+print(alex_student.mark)
+del alex_student.mark # == alex_student.del_mark()
+
+
+
 
 # private members

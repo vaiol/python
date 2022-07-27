@@ -1,15 +1,18 @@
 class Student:
-    course = 'Python'
     def __init__(self, name, age):
-        self.name = name
+        self.name = name # instance attribute
         self.age = age
         self.mark = 0
 
 
-someStudent = Student('Alex', 27)
-print(someStudent.name)
-print(someStudent.course)
-# print(Student.name) # помилка
+some_student = Student('Alex', 27)
+oleg_student = Student('Oleg', 21)
+print(some_student.name)
+print(oleg_student.name)
+
+
+
+# print(Student.course) # помилка
 
 # instance (object) vs class
 
