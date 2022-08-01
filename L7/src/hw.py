@@ -5,13 +5,19 @@ from operator import itemgetter
 # itemgetter
 
 
+# Text text TeXt
+
 # 1. lower
 # 2. split
 # 3. count every occurance
 # 4. sort by words
 # 5. sort by occurances
 
-
+# {
+#     "apple": 2,
+#     "kiwi": 2,
+#     "pineapple": 1
+# }
 
 def popularity(text: str):
     # 1. lower
@@ -21,8 +27,7 @@ def popularity(text: str):
     
     # 3. count every occurance
     words_counter = dict()
-    for w in words_arr:
-        word = w.lower()
+    for word in words_arr:
         if word in words_counter:
             words_counter[word] += 1
         else:
@@ -34,8 +39,11 @@ def popularity(text: str):
     def get_first_key(item):
         return item[0]
 
+
+    words_counter.items() # -> [(apple, 1), (kiwi, 1), (pineapple, 1)]
+
     # 4. sort by words
-    sorted_by_word = sorted(words_counter.items(), key=get_first_key)
+    sorted_by_word = sorted(words_counter.items(), key=lambda item: item[0])
 
     # 5. sort by occurances
     sorted_by_popularity = sorted(sorted_by_word, key=get_second_key, reverse=True)
@@ -46,10 +54,10 @@ def popularity(text: str):
 
 
 
-print(popularity('Apple kiwi pIneapple kiWi apple kiwi'))
-print(popularity('aPPle pine Apple kiwi Apple kiwi')) # ['apple', 'kiwi', 'pine']
-print(popularity('aPPle pine Apple kiwi Apple kiwi')) # ['apple', 'kiwi', 'pine']
-print(popularity('aab aaa aac aab aac aaa x')) # ['aaa', 'aab', 'aac', 'x']
+# print(popularity('Apple kiwi pIneapple kiWi apple kiwi'))
+# print(popularity('aPPle pine Apple kiwi Apple kiwi')) # ['apple', 'kiwi', 'pine']
+# print(popularity('aPPle pine Apple kiwi Apple kiwi')) # ['apple', 'kiwi', 'pine']
+# print(popularity('aab aaa aac aab aac aaa x')) # ['aaa', 'aab', 'aac', 'x']
 
 
 
@@ -67,11 +75,11 @@ def popularity_1(text: str):
     
     # 4. count every occurance
     words_counter = defaultdict(int)
-    for w in words_arr:
-        word = w.lower()
+    for word in words_arr:
         words_counter[word] += 1
 
     # 5. sort by occurances
+    # attrgetter
     sorted_in_comb = sorted(words_counter.items(), key=itemgetter(1), reverse=True)
     sorted_words = list(map(itemgetter(0), sorted_in_comb))
     return sorted_words
@@ -96,7 +104,7 @@ def popularity_2(text: str):
     # 3. count every occurance
     words_counter = Counter(words_arr)
 
-    # 4. sort by words and occurances
+    # 4 and 5. sort by words and occurances
     sorted_in_comb = sorted(words_counter.items(), key=lambda item: (-item[1], item[0]))
     
     # convert list of tuple into list
