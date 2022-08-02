@@ -9,6 +9,12 @@ class Student:
     def greeting(self):
         print("Hello my name is " + self.name)
 
+    def _greeting(self):
+        print("Hello my name is " + self.name)
+
+    def __kill(self):
+        print("Kill " + self.name)
+
     def set_mark(self, new_mark):
         print('set mark', new_mark)
         if new_mark <= 0:
@@ -27,16 +33,19 @@ class Student:
         print('del op')
         del self._mark
 
-    mark = property(get_mark, set_mark, del_mark)
+    mark = property(get_mark)
 
     def say_mark(self):
         print('My score is ' + str(self.mark))
 
 alex_student = Student('Alex', 27)
-print('before')
-alex_student.mark = 110
-print(alex_student.mark)
-del alex_student.mark # == alex_student.del_mark()
+
+alex_student..__kill()
+# alex_student._greeting()
+# print('before')
+# alex_student.mark = 110
+# print(alex_student.mark)
+# del alex_student.mark # == alex_student.del_mark()
 
 
 
