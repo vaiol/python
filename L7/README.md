@@ -2,7 +2,7 @@
 01.08.2022
 
 ## Матеріали
-1. Запис лекції [to_be_announced]
+1. Запис лекції https://youtu.be/IpPwspO-gV8
 
 ## ДЗ
 
