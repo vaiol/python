@@ -13,6 +13,7 @@
 
 from datetime import date, datetime
 from abc import ABC, abstractmethod
+from typing import List
 
 
 class Person:
@@ -143,7 +144,7 @@ class Mentor(UniversityEmployee):
         last_name: str,
         birth_date: date,
         salary: int,
-        courses: list[Course],
+        courses: List[Course],
     ):
         super().__init__(first_name, last_name, birth_date, salary)
         self.courses = courses
@@ -198,7 +199,7 @@ class Mentor(UniversityEmployee):
         TODO розробити!
         """
 
-    def change_courses(self, courses: list[Course]) -> bool:
+    def change_courses(self, courses: List[Course]) -> bool:
         """Метод який призначений для того щоб призначати ментори нові курси.
         Курс може бути призначений тільки якщо новий курс активний, тобто розпочався і не закінчився (див. метод Course.is_active).
         Якщо всі курси були успішно призначені метод повертає True, в іншому випадку False.
@@ -223,7 +224,7 @@ class Student(Person):
         TODO розробити!
         """
 
-    def get_all_marks(self) -> list[int]:
+    def get_all_marks(self) -> List[int]:
         """Метод який використовується вчителем коли той ставить оцінку стунденту.
         Оцінка не залежить від предмету. Потрібно зберігати всі оцінки які коли неьудь були додані.
         TODO розробити!
@@ -271,9 +272,9 @@ class University:
     def __init__(
         self,
         name: str,
-        courses: list[Course],
-        employees: list[UniversityEmployee],
-        students: list[Student],
+        courses: List[Course],
+        employees: List[UniversityEmployee],
+        students: List[Student],
     ):
         self.name = name
         self.courses = courses
@@ -291,7 +292,7 @@ class University:
         TODO розробити!
         """
 
-    def get_active_courses(self) -> list[Course]:
+    def get_active_courses(self) -> List[Course]:
         """Метод повертає всі активні (в данний момент) курси (Course.is_active()).
         TODO розробити!
         """
